@@ -3,26 +3,25 @@
   "displayName": "C/C++",
   "description": "C/C++ IntelliSense, debugging, and code browsing.",
   "version": "1.1.3-master",
-  "publisher": "ms-vscode",
+  "publisher": "libre-code",
   "icon": "LanguageCCPP_color_128x.png",
   "readme": "README.md",
   "author": {
-    "name": "Microsoft Corporation"
+    "name": "Libre Code"
   },
   "license": "SEE LICENSE IN LICENSE.txt",
   "engines": {
     "vscode": "^1.49.0"
   },
   "bugs": {
-    "url": "https://github.com/Microsoft/vscode-cpptools/issues",
-    "email": "c_cpp_support@microsoft.com"
+    "url": "https://github.com/libre-code/cpptools/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Microsoft/vscode-cpptools.git"
+    "url": "https://github.com/libre-code/cpptools.git"
   },
-  "homepage": "https://github.com/Microsoft/vscode-cpptools",
-  "qna": "https://github.com/Microsoft/vscode-cpptools/issues",
+  "homepage": "https://github.com/libre-code/cpptools",
+  "qna": "https://github.com/libre-code/cpptools/issues",
   "keywords": [
     "C",
     "C++",
@@ -38,7 +37,32 @@
     "Snippets"
   ],
   "activationEvents": [
-    "*"
+    "onLanguage:cpp",
+    "onLanguage:c",
+    "onCommand:extension.pickNativeProcess",
+    "onCommand:extension.pickRemoteNativeProcess",
+    "onCommand:C_Cpp.BuildAndDebugActiveFile",
+    "onCommand:C_Cpp.ConfigurationEditJSON",
+    "onCommand:C_Cpp.ConfigurationEditUI",
+    "onCommand:C_Cpp.ConfigurationSelect",
+    "onCommand:C_Cpp.ConfigurationProviderSelect",
+    "onCommand:C_Cpp.SwitchHeaderSource",
+    "onCommand:C_Cpp.EnableErrorSquiggles",
+    "onCommand:C_Cpp.DisableErrorSquiggles",
+    "onCommand:C_Cpp.ToggleIncludeFallback",
+    "onCommand:C_Cpp.ToggleDimInactiveRegions",
+    "onCommand:C_Cpp.ResetDatabase",
+    "onCommand:C_Cpp.TakeSurvey",
+    "onCommand:C_Cpp.LogDiagnostics",
+    "onCommand:C_Cpp.RescanWorkspace",
+    "onCommand:C_Cpp.VcpkgClipboardInstallSuggested",
+    "onCommand:C_Cpp.VcpkgClipboardOnlineHelpSuggested",
+    "onCommand:C_Cpp.GenerateEditorConfig",
+    "onDebugInitialConfigurations",
+    "onDebugResolve:cppdbg",
+    "onDebugResolve:cppvsdbg",
+    "workspaceContains:/.vscode/c_cpp_properties.json",
+    "onFileSystem:cpptools-schema"
   ],
   "main": "./dist/main",
   "contributes": {
@@ -2391,6 +2415,7 @@
     "xml2js": "^0.4.19"
   },
   "dependencies": {
+    "@libre-code/intercept-extension-telemetry": "^0.1.6",
     "comment-json": "^3.0.3",
     "editorconfig": "^0.15.3",
     "escape-string-regexp": "^2.0.0",
@@ -2400,7 +2425,6 @@
     "plist": "^3.0.1",
     "tmp": "^0.1.0",
     "vscode-cpptools": "^4.0.1",
-    "vscode-extension-telemetry": "^0.1.2",
     "vscode-languageclient": "^5.2.1",
     "vscode-nls": "^4.1.1",
     "which": "^2.0.2",

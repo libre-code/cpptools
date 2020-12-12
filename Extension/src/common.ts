@@ -54,7 +54,7 @@ export function setCachedClangFormatPath(path: string | null): void {
 }
 
 // Use this package.json to read values
-export const packageJson: any = vscode.extensions.getExtension("ms-vscode.cpptools")?.packageJSON;
+export const packageJson: any = vscode.extensions.getExtension("libre-code.cpptools")?.packageJSON;
 
 // Use getRawPackageJson to read and write back to package.json
 // This prevents obtaining any of VSCode's expanded variables.

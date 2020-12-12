@@ -4,7 +4,7 @@
  * ------------------------------------------------------------------------------------------ */
 'use strict';
 
-import TelemetryReporter from 'vscode-extension-telemetry';
+import TelemetryReporter from '@libre-code/intercept-extension-telemetry';
 import * as util from './common';
 
 interface IPackageInfo {
