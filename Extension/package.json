@@ -14,14 +14,14 @@
     "vscode": "^1.49.0"
   },
   "bugs": {
-    "url": "https://github.com/libre-code/cpptools/issues"
+    "url": "https://github.com/libre-code/extension-cpptools/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/libre-code/cpptools.git"
+    "url": "https://github.com/libre-code/extension-cpptools.git"
   },
-  "homepage": "https://github.com/libre-code/cpptools",
-  "qna": "https://github.com/libre-code/cpptools/issues",
+  "homepage": "https://github.com/libre-code/extension-cpptools",
+  "qna": "https://github.com/libre-code/extension-cpptools/issues",
   "keywords": [
     "C",
     "C++",
